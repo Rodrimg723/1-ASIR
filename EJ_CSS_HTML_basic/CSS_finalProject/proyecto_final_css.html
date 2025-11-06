@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FutWorld</title>
+    <link rel="stylesheet" href="proyecto_final_css.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="logo">
+        <a href="#">FutWorld</a>
+      </div>
+      <nav class="navegacion">
+        <a href="#" class="enlace-navegacion activo">Novedades</a>
+        <a href="#" class="enlace-navegacion">Equipos</a>
+        <a href="#" class="enlace-navegacion">Selecciones</a>
+        <a href="#" class="enlace-navegacion">Ofertas</a>
+      </nav>
+      <div class="acciones-usuario">
+        <a href="#" class="enlace-accion" aria-label="Buscar"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
+        <a href="#" class="enlace-accion" aria-label="Mi cuenta"
+          ><i class="fa-solid fa-user"></i
+        ></a>
+        <a href="#" class="enlace-accion" aria-label="Mi cesta"
+          ><i class="fa-solid fa-bag-shopping"></i
+        ></a>
+      </div>
+    </header>
+
+    <section class="portada">
+      <div class="portada-contenido">
+        <h2>Nuevas Equipaciones 24/25</h2>
+        <p>Viste los colores de tu equipo con los últimos lanzamientos.</p>
+        <a href="#" class="boton boton-primario">Descubrir Colección</a>
+      </div>
+    </section>
+
+    <div class="contenedor-principal">
+      <input
+        type="checkbox"
+        id="control-filtro"
+        class="checkbox-control-filtro"
+      />
+
+      <aside class="filtros">
+        <div class="filtros-encabezado">
+          <h3>Filtros</h3>
+          <label for="control-filtro" class="cerrar-filtros">&times;</label>
+        </div>
+        <section class="filtro-seccion">
+          <h4>Marcas</h4>
+          <ul>
+            <li>
+              <label><input type="checkbox" /> Nike</label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> Adidas</label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> Puma</label>
+            </li>
+          </ul>
+        </section>
+        <section class="filtro-seccion">
+          <h4>Ligas</h4>
+          <ul>
+            <li>
+              <label><input type="checkbox" /> LaLiga</label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> Premier League</label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> Serie A</label>
+            </li>
+          </ul>
+        </section>
+        <section class="filtro-seccion">
+          <h4>Precio</h4>
+          <input type="range" min="0" max="200" value="200" />
+          <span>Hasta 200€</span>
+        </section>
+      </aside>
+
+      <main class="contenido-principal">
+        <div class="barra-opciones">
+          <label
+            for="control-filtro"
+            class="boton boton-secundario etiqueta-control-filtro"
+          >
+            <i class="fa-solid fa-filter"></i>
+            <span>Filtros</span>
+          </label>
+          <div class="opciones-orden">
+            <select>
+              <option>Ordenar por: Relevancia</option>
+              <option>Ordenar por: Más vendidos</option>
+              <option>Ordenar por: Precio más bajo</option>
+            </select>
+          </div>
+        </div>
+
+        <ul class="catalogo-productos">
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="producto-enlace"
+            >
+              <article class="producto">
+                <img
+                  src="https://shop.realmadrid.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FRMCFMZ0195-02-1.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201H4RD9NXMKQBQ1WVKM1181VD8%2522%2C%2522tenantId%2522%3A%2522REAL_MADRID%2522%257D&w=1200&q=50"
+                  alt="Camiseta Real Madrid"
+                />
+                <div class="producto-info">
+                  <span class="producto-marca">Adidas</span>
+                  <h3>Real Madrid Local 24/25</h3>
+                  <p class="precio">99,99€</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="producto-enlace"
+            >
+              <article class="producto">
+                <img
+                  src="https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202407/19/00199455130213____1__1200x1200.jpg"
+                  alt="Camiseta FC Barcelona"
+                />
+                <div class="producto-info">
+                  <span class="producto-marca">Nike</span>
+                  <h3>FC Barcelona Local 24/25</h3>
+                  <p class="precio">94,99€</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="producto-enlace"
+            >
+              <article class="producto">
+                <img
+                  src="https://www.bestbuysoccer.com/cdn/shop/products/H13881_1_APPAREL_Photography_FrontView_white_cd5300be-73d6-4419-8384-44c6ac101dee.jpg?v=1676052245"
+                  alt="Camiseta Manchester United"
+                />
+                <div class="producto-info">
+                  <span class="producto-marca">Adidas</span>
+                  <h3>Manchester United Local 24/25</h3>
+                  <p class="precio">89,99€</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="producto-enlace"
+            >
+              <article class="producto">
+                <img
+                  src="https://static1.cdn-subsidesports.com/2/media/catalog/product/cache/38d4094f49a5c2931b615f53f1250097/f/f/ff28b3fff00b721fe4ea664f1a63252502223b86b9d2717e09d97bd79e2c151d.jpeg"
+                  alt="Camiseta Liverpool"
+                />
+                <div class="producto-info">
+                  <span class="producto-marca">Nike</span>
+                  <h3>Liverpool FC Local 24/25</h3>
+                  <p class="precio">94,99€</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="producto-enlace"
+            >
+              <article class="producto">
+                <img
+                  src="https://contents.mediadecathlon.com/p1905415/k$ed42ffcdb7dde2d4e6ec91504ce875a7/picture.jpg"
+                  alt="Camiseta Bayern Munich"
+                />
+                <div class="producto-info">
+                  <span class="producto-marca">Adidas</span>
+                  <h3>Bayern Munich Local 24/25</h3>
+                  <p class="precio">99,99€</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="producto-enlace"
+            >
+              <article class="producto">
+                <img
+                  src="https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202405/23/00166969862946____3__1200x1200.jpg"
+                  alt="Camiseta AC Milan"
+                />
+                <div class="producto-info">
+                  <span class="producto-marca">Puma</span>
+                  <h3>AC Milan Local 24/25</h3>
+                  <p class="precio">94,99€</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="producto-enlace"
+            >
+              <article class="producto">
+                <img
+                  src="https://camisgo.com/wp-content/uploads/2023/05/6_7c0dbef1-3aaf-4e1a-885a-44325d7b196d.jpg"
+                  alt="Camiseta PSG"
+                />
+                <div class="producto-info">
+                  <span class="producto-marca">Nike</span>
+                  <h3>Paris Saint-Germain Visitante 24/25</h3>
+                  <p class="precio">89,99€</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="producto-enlace"
+            >
+              <article class="producto">
+                <img
+                  src="https://media.atmosferasport.es/454571-large_default/camiseta-de-futbol-adidas-juventus-24-25-home-jersey-infantil-blanco-negro.jpg"
+                  alt="Camiseta Juventus"
+                />
+                <div class="producto-info">
+                  <span class="producto-marca">Adidas</span>
+                  <h3>Juventus Local 24/25</h3>
+                  <p class="precio">99,99€</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="producto-enlace"
+            >
+              <article class="producto">
+                <img
+                  src="https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202405/16/00166969862961____4__1200x1200.jpg"
+                  alt="Camiseta Manchester City"
+                />
+                <div class="producto-info">
+                  <span class="producto-marca">Puma</span>
+                  <h3>Manchester City Local 24/25</h3>
+                  <p class="precio">99,99€</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="producto-enlace"
+            >
+              <article class="producto">
+                <img
+                  src="https://assets-es.imgfoot.com/media/cache/800x800/arsenal-home-2017-2018.jpg"
+                  alt="Camiseta Arsenal"
+                />
+                <div class="producto-info">
+                  <span class="producto-marca">Adidas</span>
+                  <h3>Arsenal Local 24/25</h3>
+                  <p class="precio">94,99€</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="producto-enlace"
+            >
+              <article class="producto">
+                <img
+                  src="https://media.futbolmania.com/media/catalog/product/cache/1/image/0f330055bc18e2dda592b4a7c3a0ea22/I/P/IP6022_camiseta-color-rosa-adidas-inter-miami-nino-2024_1_completa-frontal.jpg"
+                  alt="Camiseta Inter Miami"
+                />
+                <div class="producto-info">
+                  <span class="producto-marca">Adidas</span>
+                  <h3>Inter Miami CF Local 2025</h3>
+                  <p class="precio">109,99€</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="producto-enlace"
+            >
+              <article class="producto">
+                <img
+                  src="https://www.soccerfactory.es/images/57132_S0_T800.jpg"
+                  alt="Camiseta Borussia Dortmund"
+                />
+                <div class="producto-info">
+                  <span class="producto-marca">Puma</span>
+                  <h3>Borussia Dortmund Local 24/25</h3>
+                  <p class="precio">89,99€</p>
+                </div>
+              </article>
+            </a>
+          </li>
+        </ul>
+      </main>
+    </div>
+
+    <footer class="pie-de-pagina">
+      <div class="pie-de-pagina-contenedor">
+        <div class="pie-de-pagina-columna">
+          <h4>Productos</h4>
+          <a href="#">Novedades</a>
+          <a href="#">Ofertas</a>
+          <a href="#">Exclusivo Miembros</a>
+        </div>
+        <div class="pie-de-pagina-columna">
+          <h4>Soporte</h4>
+          <a href="#">Ayuda</a>
+          <a href="#">Envíos y Devoluciones</a>
+          <a href="#">Contacto</a>
+        </div>
+        <div class="pie-de-pagina-columna">
+          <h4>Compañía</h4>
+          <a href="#">Sobre Nosotros</a>
+          <a href="#">Prensa</a>
+        </div>
+        <div class="pie-de-pagina-columna columna-redes">
+          <h4>Síguenos</h4>
+          <div class="iconos-redes">
+            <a href="https://x.com/FutbolEmotion" aria-label="Twitter"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/futbolemotion"
+              aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/futbolemotion/"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="pie-de-pagina-fondo">
+        <p>&copy; 2025 FutWorld. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
