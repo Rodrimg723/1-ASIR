@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.6;
+  color: #1d1d1d;
+  background-color: #f4f4f9;
+  font-size: 16px;
+}
+
+.contenedor {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 22px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.boton-principal {
+  background-color: #540086;
+  color: #ffffff;
+  border-color: #540086;
+}
+
+.boton-principal:hover {
+  background-color: #febe10;
+  color: #540086;
+  border-color: #febe10;
+}
+
+.encabezado-pagina {
+  background-color: #ffffff;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid #540086;
+}
+
+.contenido-encabezado-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logotipo {
+  font-size: 27px;
+  font-weight: 700;
+  color: #540086;
+}
+
+.navegacion-principal ul {
+  list-style: none;
+  display: flex;
+}
+
+.navegacion-principal ul li {
+  margin-left: 30px;
+}
+
+.navegacion-principal ul li a {
+  text-decoration: none;
+  color: #303030;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 8px 0;
+}
+
+.navegacion-principal ul li a:hover {
+  color: #febe10;
+}
+
+.boton-menu-movil {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #540086;
+}
+
+.seccion-bienvenida.contenedor {
+  background-color: #ffffff;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.texto-bienvenida {
+  flex-basis: 55%;
+  text-align: left;
+}
+
+.texto-bienvenida h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #004996;
+}
+
+.texto-bienvenida p {
+  font-size: 18px;
+  margin-bottom: 35px;
+  color: #4a4a4a;
+}
+
+.imagen-bienvenida {
+  flex-basis: 40%;
+}
+
+.imagen-bernabeu {
+  width: 100%;
+  height: 380px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777777;
+  font-style: italic;
+  background-image: linear-gradient(45deg, #004996, #540086);
+  border: 4px solid #febe10;
+}
+
+.seccion-trofeos.contenedor,
+.seccion-madridismo.contenedor {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.seccion-trofeos.contenedor {
+  text-align: center;
+  background-color: #004996;
+  color: #ffffff;
+}
+.seccion-madridismo.contenedor {
+  background-color: #ffffff;
+}
+
+.seccion-trofeos h2,
+.seccion-madridismo h2 {
+  margin-bottom: 40px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.seccion-trofeos h2 {
+  color: #febe10;
+}
+.seccion-madridismo h2 {
+  text-align: center;
+  color: #540086;
+}
+
+.lista-items-flex {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+}
+.seccion-madridismo .lista-items-flex {
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.cada-trofeo {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px 20px;
+  border-radius: 8px;
+  min-width: 200px;
+  text-align: center;
+  flex: 1;
+  border: 1px solid #febe10;
+  transition: background-color 0.3s ease;
+}
+.cada-trofeo:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.cada-trofeo h4 {
+  font-size: 22px; /* Equivalente aproximado de 1.4em */
+  color: #febe10;
+  margin-bottom: 10px;
+}
+.cada-trofeo p {
+  font-size: 18px; /* Equivalente aproximado de 1.1em */
+  color: #f0f0f0;
+}
+
+.tarjeta-opinion {
+  flex-basis: 31%;
+  background-color: #f9f9f9;
+  padding: 30px 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 5px solid #540086;
+  transition: background-color 0.3s ease;
+}
+.tarjeta-opinion:hover {
+  background-color: #f0f0f0;
+}
+.avatar-opinion {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: #cccccc;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777777;
+  font-style: italic;
+  font-size: 14px;
+  border: 3px solid #febe10;
+}
+.tarjeta-opinion h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #004996;
+  font-weight: 600;
+}
+.tarjeta-opinion p {
+  font-size: 15px;
+  color: #555555;
+  font-style: italic;
+}
+
+.pie-de-pagina {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding: 50px 0 25px;
+}
+
+.columnas-pie-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+
+.columna-pie {
+  flex: 1;
+  min-width: 160px;
+}
+
+.columna-pie h4 {
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #febe10;
+  font-weight: 600;
+  border-bottom: 1px solid #444;
+  padding-bottom: 8px;
+}
+
+.columna-pie ul {
+  list-style: none;
+}
+
+.columna-pie ul li {
+  margin-bottom: 10px;
+}
+
+.columna-pie ul li a {
+  text-decoration: none;
+  color: #b0b0b0;
+  transition: color 0.3s ease;
+}
+
+.columna-pie ul li a:hover {
+  color: #ffffff;
+}
+
+.info-copyright {
+  text-align: center;
+  padding-top: 25px;
+  border-top: 1px solid #333333;
+  font-size: 14px;
+  color: #a0a0a0;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .contenido-encabezado-flex {
+    position: relative;
+  }
+
+  .navegacion-principal {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #eee;
+  }
+  .navegacion-principal ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navegacion-principal ul li {
+    margin-left: 0;
+    text-align: center;
+  }
+  .navegacion-principal ul li a {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .navegacion-principal ul li:last-child a {
+    border-bottom: none;
+  }
+
+  .boton-menu-movil {
+    display: block;
+  }
+
+  .seccion-bienvenida.contenedor {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .texto-bienvenida {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .texto-bienvenida h1 {
+    font-size: 40px;
+  }
+
+  .imagen-bienvenida {
+    flex-basis: auto;
+    width: 90%;
+    max-width: 420px;
+  }
+  .marcador-imagen,
+  .imagen-bernabeu {
+    height: 280px;
+  }
+
+  .lista-items-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarjeta-opinion,
+  .cada-trofeo {
+    flex-basis: 85%;
+    max-width: 450px;
+    margin-bottom: 25px;
+  }
+  .tarjeta-opinion:last-child,
+  .cada-trofeo:last-child {
+    margin-bottom: 0;
+  }
+
+  .columnas-pie-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .columna-pie {
+    margin-bottom: 25px;
+  }
+  .columna-pie:last-child {
+    margin-bottom: 0;
+  }
+  .columna-pie h4 {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .texto-bienvenida h1 {
+    font-size: 34px;
+  }
+  .texto-bienvenida p {
+    font-size: 16px;
+  }
+  .marcador-imagen,
+  .imagen-bernabeu {
+    height: 220px;
+  }
+
+  .seccion-madridismo h2,
+  .seccion-trofeos h2 {
+    font-size: 30px;
+  }
+
+  .tarjeta-opinion,
+  .cada-trofeo {
+    flex-basis: 95%;
+  }
+}
