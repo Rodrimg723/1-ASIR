@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RodriComponentes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>RodriComponentes</h1>
+      <input type="text" id="search-input" placeholder="Buscar productos..." />
+    </header>
+
+    <div class="site-container">
+      <aside class="filters-panel">
+        <div class="filter-group">
+          <h4>Filtrar por Precio</h4>
+          <label>
+            <input type="radio" name="price" value="all" checked /> Todos
+          </label>
+          <label>
+            <input type="radio" name="price" value="0-500" /> Menos de 500€
+          </label>
+          <label>
+            <input type="radio" name="price" value="500-1000" /> 500€ - 1000€
+          </label>
+          <label>
+            <input type="radio" name="price" value="1000+" /> Más de 1000€
+          </label>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <section id="products-section" class="products-grid"></section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <p>&copy; 2024 RodriComponentes. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
