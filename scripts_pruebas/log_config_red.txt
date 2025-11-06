@@ -1,0 +1,6 @@
+--- 
+[07/05/2025 14:10:28,51] Configuración de red aplicada: IP=12, MÁSCARA=1341, GATEWAY=124132 
+--- 
+[08/05/2025 12:24:13,43] Configuración de red aplicada: IP=192.168.103.2, MÁSCARA=255.255.255.0, GATEWAY=192.168.103.1 
+--- 
+[08/05/2025 12:29:16,25] Configuración de red aplicada: IP=, MÁSCARA=, GATEWAY= 
