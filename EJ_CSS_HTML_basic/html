@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier League</title>
+    <link
+      rel="icon"
+      href="https://brandlogos.net/wp-content/uploads/2016/11/premier-league-logo-preview.png"
+      type="image/x-icon"
+    />
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #000000;
+      }
+
+      header {
+        background-color: #688dc5;
+        color: rgb(64, 4, 82);
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      header img {
+        width: 180px;
+        vertical-align: middle;
+      }
+
+      header h1 {
+        font-size: 40px;
+        margin: 10px 0;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      nav {
+        background-color: #2a3a57;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin-right: 25px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 15px;
+        font-size: 1.1em;
+        transition: background-color 0.5s;
+      }
+
+      nav ul li a:hover {
+        background-color: #0a1423;
+        border-radius: 5px;
+      }
+
+      main {
+        padding: 40px 20px;
+      }
+
+      section h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .divNoticia {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+      }
+
+      .Noticia {
+        width: 47%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        transition: transform 0.3s;
+      }
+
+      .Noticia img {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #ddd;
+      }
+
+      .MCity {
+        width: auto;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .Liverpool {
+        width: auto;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .DescripNoticia {
+        padding: 20px;
+        text-align: left;
+      }
+
+      .Noticia h3 {
+        font-size: 25px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .Noticia p {
+        color: #434141;
+        font-size: 1em;
+        margin-bottom: 10px;
+      }
+
+      .subtitulo {
+        font-style: italic;
+        color: #777;
+        font-size: 20px;
+      }
+
+      .DivNoticiaSecundaria {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .NoticiaSecundaria {
+        width: 32%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      .NoticiaSecundaria img {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #ddd;
+      }
+
+      .DescripNoticiaSecundaria {
+        padding: 15px;
+        text-align: left;
+      }
+
+      footer {
+        background-color: #0e1a2b;
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      footer p {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+      }
+
+      footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.2em;
+        transition: color 0.3s;
+      }
+
+      footer a:hover {
+        color: #ffd700;
+      }
+
+      .Formulario h2 {
+        margin-top: 60px;
+        margin-bottom: 3px;
+        font-size: 24px;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+
+      form label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      form input[type='text'],
+      form input[type='email'],
+      form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 16px;
+      }
+
+      form input[type='submit'] {
+        background-color: #0e1a2b;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      form input[type='submit']:hover {
+        background-color: #1e2a3a;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://logos-world.net/wp-content/uploads/2023/02/Premier-League-Symbol.png"
+        alt="Premier League Logo"
+      />
+      <h1>Premier League</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Equipos</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Partidos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>BREAKING NEWS</h2>
+        <div class="divNoticia">
+          <div class="Noticia">
+            <img
+              class="Liverpool"
+              src="https://cdn.25gramos.com/wp-content/uploads/sites/2/2024/04/6627ac5c496cb4b2d7cf250b_lfc-adi-1-1024x683.jpg"
+              alt="Noticia 1 - Nuevo contrato ropa"
+            />
+            <div class="DescripNoticia">
+              <h3>
+                Liverpool FC y adidas se unen con una nueva asociación
+                multi-anual
+              </h3>
+              <p class="subtitulo">
+                El actual líder de la premier se asocia en un contrato
+                multi-anual con Adidas.
+              </p>
+              <p>
+                Tras su ruptura reciente con New balance, el Liverpool se ha
+                decantado por el gigante del textil alemán como muchos otros
+                clubes
+              </p>
+            </div>
+          </div>
+          <div class="Noticia">
+            <img
+              class="MCity"
+              src="https://livesport-ott-images.ssl.cdn.cra.cz/r900xfq60/6a5a71c3-5d37-4823-ad05-cbfa312d92d7.jpeg"
+              alt="Noticia 2 - Fichajes en la Premier League"
+            />
+            <div class="DescripNoticia">
+              <h3>Los fichajes más caros de la temporada 2025</h3>
+              <p class="subtitulo">
+                El manchester City sin duda desembolso el que más en este
+                mercado de invierno.
+              </p>
+              <p>
+                En un intento desesperado por salvar la temporada los de pep
+                guardiola se han lanzado al mercado con un gasto de unos 150
+                Millones de libras.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2>Otras Noticias</h2>
+        <div class="DivNoticiaSecundaria">
+          <div class="NoticiaSecundaria">
+            <img
+              src="https://assets.goal.com/images/v3/blt304c621fb6bd82ff/Big_Match_Man_City_vs_Man_United.jpg"
+              alt="Noticia 3 - Derby Manchester"
+            />
+            <div class="DescripNoticiaSecundaria">
+              <p class="subtitulo">
+                El derby de Manchester se lo llevan los red devils
+              </p>
+            </div>
+          </div>
+          <div class="NoticiaSecundaria">
+            <img
+              src="https://static.independent.co.uk/2023/11/05/16/SOCCER%20Forest%20%2016234543.jpg"
+              alt="Noticia 4 - Equipo revelación"
+            />
+            <div class="DescripNoticiaSecundaria">
+              <p class="subtitulo">
+                El Nottingham forest se coloca en puestos champions en el mes de
+                Marzo
+              </p>
+            </div>
+          </div>
+          <div class="NoticiaSecundaria">
+            <img
+              src="https://assets-es.imgfoot.com/media/cache/1200x900/mohamed-salah-2425-6.jpg"
+              alt="Noticia 5 - Mohamed Salah MVP"
+            />
+            <div class="DescripNoticiaSecundaria">
+              <p class="caption">
+                Mohamed Salah reciber el premio al mejor del mes
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Formulario">
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Premier League ©️</p>
+      <p>Contacta con nosotros a través de nuestras redes sociales:</p>
+      <a href="https://twitter.com/premierleague">Twitter</a>
+      <a href="https://www.instagram.com/premierleague/">Instagram</a>
+    </footer>
+  </body>
+</html>
