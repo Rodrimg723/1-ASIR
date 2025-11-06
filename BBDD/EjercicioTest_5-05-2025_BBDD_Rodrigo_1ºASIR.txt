@@ -1,0 +1,45 @@
+1) --> b) DML se utiliza para manipular los datos, mientras que DQL se utiliza para consultar los datos
+
+2) --> b) INSERT INTO empleados (nombre, edad, departamento) VALUES ('Carlos', 28, 'IT');
+
+3) --> b) Selecciona el nombre y el nuevo salario (aumento del 10%) de todos los empleados en el departamento de
+	  Ventas.
+
+4) --> c) WHERE filtra filas antes de la agregación, mientras que HAVING filtra los grupos después de la agregación.
+
+5) --> c) Elimina los productos con un precio por debajo del precio promedio.
+
+6) --> c) Devuelve todas las filas de la tabla izquierda y las filas coincidentes de la tabla derecha.
+
+7) --> c) Puede devolver un gran número de combinaciones no deseadas, afectando el rendimiento.
+
+8) --> c) SELECT * FROM clientes LEFT JOIN pedidos ON clientes.id = pedidos.cliente_id;
+
+9) --> c) COUNT()
+
+10) --> c) Se utiliza para agrupar filas que tienen los mismos valores en una o más columnas.
+
+11) --> c) LIKE
+
+12) --> b) OR
+
+13) --> c) NOW()
+
+14) --> b) SELECT producto, SUM(cantidad * precio_unitario) AS total_ingresos FROM ventas GROUP BY
+           producto;
+
+15) --> c) Las subconsultas son consultas anidadas dentro de otra consulta.
+
+
+16) --> c) INNER JOIN
+
+17) --> b) Simplificar la lectura de la consulta, especialmente con nombres de tablas o columnas largos.
+
+
+18) --> b) SELECT empleados.nombre, departamentos.nombre_departamento FROM empleados INNER JOIN
+departamentos ON empleados.departamento = departamentos.nombre;
+
+19) --> c) La inserción fallará y se generará un error.
+
+20) --> b) DELETE elimina filas individualmente y registra cada eliminación, mientras que TRUNCATE elimina todos los
+datos de forma rápida sin registrar las eliminaciones.
