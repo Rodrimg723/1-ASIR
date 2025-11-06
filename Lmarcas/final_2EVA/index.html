@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reservación de Hotel</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+
+</head>
+<body>
+
+	<header>Reserva Hotel Eurostars Acueducto</header>
+
+			<form id="reserva">
+
+				<fieldset class="DatosReserva">
+
+					<legend>Datos de Reserva</legend>
+			
+
+				<label for="nombreHuesped">Nombre Huesped:</label>
+		  		<input id="nombreHuesped" name="nombre" type="text" placeholder="Introduzca nombre huesped" required >
+
+		   		<label for="apellidoHuesped">Apellidos Huesped:</label>
+		   		<input id="apellidoHuesped" type="text" placeholder="Introduzca apellido huesped" required >
+
+				<label for="fechaLLegada">Fecha Llegada:</label>
+				<input id="fechaLLegada" type="date" required min="2025-02-14">
+
+				<label for="fechaSalida">Fecha Salida:</label>
+				<input id="fechaSalida" type="date" required min="2025-02-15">
+
+				<label for ="numeroHuespedes"> Nº numeroHuespedes:</label>
+			   
+				<input id="numeroHuespedes" type="number" required min= "1" max="6">
+
+				<label for="tipoHabitación"> Tipo habitación: </label>
+
+					<select name="tipoHabitación" id="tipoHabitación">
+						<option value="">Seleccione</option>
+						<option value="Individual">Individual</option>
+						<option value="Doble">Doble</option>
+						<option value="Triple">Triple</option>
+					</select>
+
+
+					<button type="submit" id="Reservar">Reservar</button>
+				<button type="button" id="Verificar">Verificar Disponibilidad</button>
+	
+
+				</fieldset>
+
+			</form>
+
+
+</body>
+
+</html>
