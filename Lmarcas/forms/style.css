@@ -1,0 +1,135 @@
+/*
+
+
+Apiuntando al mismo elemento pero esta vez utilizando el ID seguridadForm, dale un borde con color distintivo y agrega márgenes y espaciado adecuado entre los elementos;
+
+
+Estiliza los input del tipo email y date de forma diferente con un color de fondo diferente y un borde especial;
+Cambia el color del placeholder de los inputs para que se vea más amigable;
+
+
+
+
+/* No le asigné la misma clase porque ya no me da tiempo */
+
+body{
+background-color: antiquewhite;
+} 
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    color: #000000;
+}
+
+
+input{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow:7px 7px 12px 0 rgba(63, 62, 62, 0.3);
+    padding: 3px;
+    font-size: smaller;
+
+    
+}
+ 
+
+input:hover{
+background-color: aqua;
+}
+#email:hover {
+    background-color: rgb(189, 186, 186);
+    cursor: pointer;
+}
+
+#email{
+    color: rgb(126, 0, 245);
+    background-color: aquamarine;
+    border-radius: 20px;
+}
+
+
+
+#fechaAnalisis:hover {
+    background-color: rgb(255, 10, 10);
+    cursor: pointer;
+}
+
+#fechaAnalisis{
+    color: rgb(49, 82, 0);
+    background-color: rgb(153, 153, 228);
+    border-width: 3px;
+}
+
+
+.DatosResponsable{
+    background-color: aliceblue;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 600px;
+}
+
+.DatosAnalisis{
+    background-color: rgb(114, 181, 240);
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 600px;
+}
+
+
+.TipoEvaluacion{
+    margin: auto;
+    margin-top: 20px;
+}
+
+.AreaEvaluada{
+    margin: auto;
+    margin-top: 20px;
+    font-size: smaller;
+}
+
+.NivelRiesgo{
+    margin: auto;
+    font-size: small;
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+.Button{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+
+textarea{
+    
+    display: block;
+    margin: 30px auto;
+
+
+}
+#seguridadForm{
+    border-color: rgb(255, 238, 0);
+}
+
+::placeholder{
+    color: rgb(175, 100, 3);
+}
+
+input #email{
+
+    color: #000000;
+    
+}
+
+label{
+    font-size: medium
+}

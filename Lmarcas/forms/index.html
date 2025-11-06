@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Analisis de Seguridad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Analisis de Seguridad</h1>
+    </header>
+
+    <main>
+
+        <form id="seguridadForm" class="FormularioAnalisis" method="post" action="test.html">   
+
+             <fieldset class="DatosResponsable">
+
+                    <legend>Datos del Responsable</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Introduzca nombre responsable" required>
+
+                    <label for="apellido">Apellidos:</label>
+                    <input id="apellido" type="text" placeholder="Introduzca apellido responsable" required>
+
+                    <label for="Departamento">Departamento: </label>
+                        <select id="Departamento" name="Departamento" required>
+                            <option value="">Seleccione</option>
+                            <option value="Blue">Blue Team</option>
+                            <option value="Red">Red Team</option>
+                            <option value="Purple">Purple Team</option>
+                            <option value="other">Otro</option>
+                        </select>
+
+                        <label for="email">Email: </label>
+                        <input id="email" name="email" type="email" placeholder="Introduzca email responsable" required>
+                        
+            </fieldset>
+
+            <fieldset class="DatosAnalisis">
+
+                <label for="fechaAnalisis">Fecha Analisis:</label>
+                <input id="fechaAnalisis" type="date">
+
+            <fieldset class="TipoEvaluacion">
+
+                <label for="Departamento">Tipo de Evaluación:</label>
+                <label for="Interna">Interna</label>
+                <input id="Interna" type="radio" name="TipoEvaluación" value="Interna">
+    
+                <label for="Externa">Externa</label>
+                <input id="Externa" type="radio" name="TipoEvaluación" value="Externa">   
+    
+                <label for="Mixta">Mixta</label>
+                <input id="Mixta" type="radio" name="TipoEvaluación" value="Mixta">   
+                
+            </fieldset>
+
+            <fieldset class="AreaEvaluada">
+
+                <label for="Departamento">Area: </label>
+                <label for="Hardware">Hardware</label>
+                <input id="Hardware" type="checkbox" name="Area Evaluada" value="Hardware">
+    
+                <label for="Software">Software</label>
+                <input id="Software" type="checkbox" name="Area Evaluada" value="Software">   
+    
+                <label for="Red">Red</label>
+                <input id="Red" type="checkbox" name="Area Evaluada" value="Red"> 
+
+                <label for="Politicas">P. Seguridad</label>
+                <input id="Politicas" type="checkbox" name="Area Evaluada" value="Politicas"> 
+            
+            </fieldset>
+
+
+            <fieldset class="NivelRiesgo">
+
+                <label for="Nivel_Riesgo">Nivel de Riesgo: </label>
+                    <select id="Nivel_Riesgo" name="Nivel de Riesgo" required>
+                        <option value="">Seleccione</option>
+                        <option value="Bajo">Bajo</option>
+                        <option value="Alto">Alto</option>
+                        <option value="Medio">Medio</option>
+                        <option value="Crítico">Crítico</option>
+                    </select>
+
+            </fieldset>
+
+            </fieldset>
+
+            <textarea id="comentarios" cols="50" rows="10" maxlength="500" placeholder="Introduzca comentarios adicionales"></textarea>
+
+            <input class="Button" type="submit" value="Enviar">
+
+        </form>
+
+    </main>
+
+    <footer>
+
+        <h2>Prueba Evaluable ASIR 24/01/2025</h2>
+
+    </footer>
+    
+</body>
+
+</html>
